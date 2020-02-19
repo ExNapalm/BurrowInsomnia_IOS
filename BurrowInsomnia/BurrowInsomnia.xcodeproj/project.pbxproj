@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08267AF523FCBA8200A4ACC9 /* SKSpriteNode_Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08267AF423FCBA8200A4ACC9 /* SKSpriteNode_Animation.swift */; };
+		08267AF723FCBAD500A4ACC9 /* MoleCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08267AF623FCBAD500A4ACC9 /* MoleCharacter.swift */; };
+		08267AF923FCBE7F00A4ACC9 /* Effect_Slash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08267AF823FCBE7F00A4ACC9 /* Effect_Slash.swift */; };
+		08267AFB23FCBE9400A4ACC9 /* Effect_Collect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08267AFA23FCBE9400A4ACC9 /* Effect_Collect.swift */; };
+		08267AFD23FCBEEC00A4ACC9 /* Effect_Dust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08267AFC23FCBEEC00A4ACC9 /* Effect_Dust.swift */; };
 		08AEE1BE23D7CB9D002BD75B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AEE1BD23D7CB9D002BD75B /* AppDelegate.swift */; };
 		08AEE1C023D7CB9D002BD75B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 08AEE1BF23D7CB9D002BD75B /* GameScene.sks */; };
 		08AEE1C223D7CB9D002BD75B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 08AEE1C123D7CB9D002BD75B /* Actions.sks */; };
@@ -18,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08267AF423FCBA8200A4ACC9 /* SKSpriteNode_Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKSpriteNode_Animation.swift; sourceTree = "<group>"; };
+		08267AF623FCBAD500A4ACC9 /* MoleCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoleCharacter.swift; sourceTree = "<group>"; };
+		08267AF823FCBE7F00A4ACC9 /* Effect_Slash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect_Slash.swift; sourceTree = "<group>"; };
+		08267AFA23FCBE9400A4ACC9 /* Effect_Collect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect_Collect.swift; sourceTree = "<group>"; };
+		08267AFC23FCBEEC00A4ACC9 /* Effect_Dust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect_Dust.swift; sourceTree = "<group>"; };
 		08AEE1BA23D7CB9D002BD75B /* BurrowInsomnia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurrowInsomnia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08AEE1BD23D7CB9D002BD75B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08AEE1BF23D7CB9D002BD75B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -41,6 +51,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08267AFE23FCBEFA00A4ACC9 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				08267AF823FCBE7F00A4ACC9 /* Effect_Slash.swift */,
+				08267AFA23FCBE9400A4ACC9 /* Effect_Collect.swift */,
+				08267AFC23FCBEEC00A4ACC9 /* Effect_Dust.swift */,
+			);
+			path = Effects;
+			sourceTree = "<group>";
+		};
+		08267AFF23FCBF2200A4ACC9 /* Game_Spaces */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Game_Spaces;
+			sourceTree = "<group>";
+		};
 		08AEE1B123D7CB9D002BD75B = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +87,11 @@
 		08AEE1BC23D7CB9D002BD75B /* BurrowInsomnia */ = {
 			isa = PBXGroup;
 			children = (
+				08267AFF23FCBF2200A4ACC9 /* Game_Spaces */,
+				08267AFE23FCBEFA00A4ACC9 /* Effects */,
 				08AEE1BD23D7CB9D002BD75B /* AppDelegate.swift */,
 				08AEE1BF23D7CB9D002BD75B /* GameScene.sks */,
+				08267AF423FCBA8200A4ACC9 /* SKSpriteNode_Animation.swift */,
 				08AEE1C123D7CB9D002BD75B /* Actions.sks */,
 				08AEE1C323D7CB9D002BD75B /* GameScene.swift */,
 				08AEE1C523D7CB9D002BD75B /* GameViewController.swift */,
@@ -69,6 +99,7 @@
 				08AEE1CA23D7CB9E002BD75B /* Assets.xcassets */,
 				08AEE1CC23D7CB9E002BD75B /* LaunchScreen.storyboard */,
 				08AEE1CF23D7CB9E002BD75B /* Info.plist */,
+				08267AF623FCBAD500A4ACC9 /* MoleCharacter.swift */,
 			);
 			path = BurrowInsomnia;
 			sourceTree = "<group>";
@@ -146,8 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08267AFD23FCBEEC00A4ACC9 /* Effect_Dust.swift in Sources */,
+				08267AF923FCBE7F00A4ACC9 /* Effect_Slash.swift in Sources */,
 				08AEE1C423D7CB9D002BD75B /* GameScene.swift in Sources */,
+				08267AF523FCBA8200A4ACC9 /* SKSpriteNode_Animation.swift in Sources */,
+				08267AFB23FCBE9400A4ACC9 /* Effect_Collect.swift in Sources */,
 				08AEE1C623D7CB9D002BD75B /* GameViewController.swift in Sources */,
+				08267AF723FCBAD500A4ACC9 /* MoleCharacter.swift in Sources */,
 				08AEE1BE23D7CB9D002BD75B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
